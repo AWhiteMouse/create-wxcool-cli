@@ -27,7 +27,7 @@ program
                 console.log(answers)
                 const spinner = ora('Init project...')
                 spinner.start()
-                const downloadPath = 'direct:https://github.com/AWhiteMouse/WxCool.git'
+                const downloadPath = 'AWhiteMouse/WxCool'
                 download(
                     downloadPath,
                     name,
