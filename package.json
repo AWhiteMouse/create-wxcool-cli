@@ -1,6 +1,6 @@
 {
   "name": "create-wxcool-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "create a wxcool program",
   "main": "bin/index.js",
   "bin": {
