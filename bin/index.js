@@ -1,10 +1,5 @@
-/*
- * @Description: create-wxcool-cli
- * @Author: chenxin
- * @Date: 2019-09-29 15:42:52
- * @LastEditors: chenxin
- * @LastEditTime: 2019-09-29 17:26:36
- */
+#!/usr/bin/env node
+
 const chalk = require('chalk')
 const download = require('download-git-repo')
 const fs = require('fs')
