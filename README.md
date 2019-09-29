@@ -1,4 +1,4 @@
-# create-wxcool-cli
+# Create-wxcool-cli
 
 ## Install
 
