@@ -10,7 +10,7 @@ const symbols = require('log-symbols')
 const handlebars = require('handlebars')
 
 program
-  .version(require('./package').version, '-v, --version')
+  .version(require('../package').version, '-v, --version')
   .command('init <name>')
   .action((name) => {
     if (!fs.existsSync(name)) {
