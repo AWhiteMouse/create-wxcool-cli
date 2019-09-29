@@ -58,8 +58,9 @@ program
             console.error(symbols.error, chalk.red('project had exist'))
         }
     }).on('--help', () => {
-        console.log('  Examples:')
-        console.log('    $ w init index')
+        console.log('')
+        console.log('Examples:')
+        console.log('  $ create-wxcool init <app-name>')
         console.log()
     })
 
