@@ -6,7 +6,7 @@ const fs = require('fs')
 const handlebars = require('handlebars')
 const ora = require('ora')
 const program = require('commander')
-const requirer = require('requirer')
+const inquirer = require('inquirer')
 const symbols = require('log-symbols')
 
 program
@@ -15,7 +15,7 @@ program
     .alias('i')
     .action(name => {
         if (!fs.existsSync(name)) {
-            requirer.prompt([
+            inquirer.prompt([
                 {
                     name: "description",
                     message: 'Please enter description '
