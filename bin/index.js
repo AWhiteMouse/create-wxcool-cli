@@ -37,7 +37,7 @@ program
                             spinner.fail()
                             console.error(
                                 symbols.error,
-                                chalk.red(`${err}download template fail,please check your network connection and try again`)
+                                chalk.red(`${err}create project fail,please check your network connection and try again`)
                             )
                             process.exit(1)
                         }
@@ -63,5 +63,4 @@ program
         console.log('  $ create-wxcool init <app-name>')
         console.log()
     })
-
-program.parse(process.argv)
+    .parse(process.argv)
