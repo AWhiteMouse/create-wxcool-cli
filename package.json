@@ -1,0 +1,26 @@
+{
+  "name": "create-wxcool-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/index.js",
+  "bin": {
+    "create-wxcool": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^3.0.2",
+    "download-git-repo": "^2.0.0",
+    "fs": "0.0.1-security",
+    "handlebars": "^4.3.4",
+    "inquirer": "^7.0.0",
+    "log-symbols": "^3.0.0",
+    "ora": "^4.0.2"
+  }
+}
