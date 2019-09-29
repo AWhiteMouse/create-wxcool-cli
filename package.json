@@ -1,17 +1,23 @@
 {
   "name": "create-wxcool-cli",
   "version": "1.0.4",
-  "description": "",
-  "main": "./bin/index.js",
+  "description": "create a wxcool program",
+  "main": "bin/index.js",
   "bin": {
-    "create-wxcool": "./bin/index.js"
+    "create-wxcool": "bin/index.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AWhiteMouse/create-wxcool-cli.git"
   },
-  "keywords": [],
+  "keywords": [
+    "wxcool"
+  ],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AWhiteMouse/create-wxcool-cli/issues"
+  },
   "devDependencies": {},
   "dependencies": {
     "chalk": "^2.4.2",

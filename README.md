@@ -1,5 +1,13 @@
 # create-wxcool-cli
 
-```js
-create-wxcool i demo
+## Install
+
+```bash
+npm i create-wxcool-cli -g
+```
+
+## Create Project
+
+```bash
+create-wxcool i <app-name>
 ```
