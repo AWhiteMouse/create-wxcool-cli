@@ -10,7 +10,7 @@ const inquirer = require('inquirer')
 const symbols = require('log-symbols')
 
 program
-    .version(require('./package').version, '-v, --version')
+    .version(require('../package').version, '-v, --version')
     .command('init <name>')
     .alias('i')
     .action(name => {
