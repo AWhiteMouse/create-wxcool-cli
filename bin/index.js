@@ -12,6 +12,7 @@ const handlebars = require('handlebars')
 program
     .version(require('../package').version, '-v, --version')
     .command('init <name>')
+    .alias('i')
     .action((name) => {
         if (!fs.existsSync(name)) {
             inquirer.prompt([
@@ -63,4 +64,5 @@ program
         console.log('  $ create-wxcool init <app-name>')
         console.log()
     })
-    .parse(process.argv)
+
+program.parse(process.argv)
