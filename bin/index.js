@@ -26,7 +26,7 @@ program
                 }
             ]).then((answers) => {
                 console.log(answers)
-                const spinner = ora('create program...')
+                const spinner = ora('Create Program...')
                 spinner.start()
                 const downloadPath = 'AWhiteMouse/WxCool'
                 download(
@@ -52,11 +52,15 @@ program
                         const content = fs.readFileSync(fileName).toString()
                         const result = handlebars.compile(content)(meta)
                         fs.writeFileSync(fileName, result)
+                        console.log(
+                            symbols.success,
+                            chalk.green('Success!')
+                        )
                     })
             })
         } else {
             // 错误提示项目已存在，避免覆盖原有项目
-            console.error(symbols.error, chalk.red('project had exist'))
+            console.error(symbols.error, chalk.red('Project Had Exist!'))
         }
     }).on('--help', () => {
         console.log()
