@@ -6,14 +6,10 @@
 npm i create-wxcool-cli -g
 ```
 
-## Create Project
+## Create And Run Project
 
 ```bash
 create-wxcool i <app-name>
-```
-
-## Run Project
-
-```bash
+cd <app-name>
 npm run dev
 ```
