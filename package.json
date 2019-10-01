@@ -11,13 +11,22 @@
     "url": "git+https://github.com/AWhiteMouse/create-wxcool-cli.git"
   },
   "keywords": [
-    "wxcool"
+    "wxcool",
+    "chalk",
+    "commander",
+    "download-git-repo",
+    "fs",
+    "handlebars",
+    "inquirer",
+    "log-symbols",
+    "ora"
   ],
-  "author": "",
+  "author": "1586671591@qq.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AWhiteMouse/create-wxcool-cli/issues"
   },
+  "homepage": "https://github.com/AWhiteMouse/create-wxcool-cli",
   "devDependencies": {},
   "dependencies": {
     "chalk": "^2.4.2",
