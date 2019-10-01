@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
-const fs = require('fs')
-const program = require('commander')
 const chalk = require('chalk')
 const download = require('download-git-repo')
+const fs = require('fs')
+const handlebars = require('handlebars')
 const inquirer = require('inquirer')
 const ora = require('ora')
+const program = require('commander')
 const symbols = require('log-symbols')
-const handlebars = require('handlebars')
 
 program
     .version(require('../package').version, '-v, --version')
@@ -59,9 +59,10 @@ program
             console.error(symbols.error, chalk.red('project had exist'))
         }
     }).on('--help', () => {
-        console.log('')
+        console.log()
         console.log('Examples:')
         console.log('  $ create-wxcool init <app-name>')
+        console.log('  $ create-wxcool i <app-name>')
         console.log()
     })
 

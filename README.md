@@ -11,3 +11,9 @@ npm i create-wxcool-cli -g
 ```bash
 create-wxcool i <app-name>
 ```
+
+## Run Project
+
+```bash
+npm run dev
+```
