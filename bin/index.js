@@ -13,6 +13,7 @@ program
     .version(require('../package').version, '-v, --version')
     .command('init <name>')
     .alias('i')
+    .description('install mini program——WxCool')
     .action((name) => {
         if (!fs.existsSync(name)) {
             inquirer.prompt([
@@ -23,6 +24,10 @@ program
                 {
                     name: 'author',
                     message: 'please enter author:',
+                },
+                {
+                    name: 'appid',
+                    message: 'please enter program appid:'
                 }
             ]).then((answers) => {
                 console.log(answers)
@@ -42,16 +47,25 @@ program
                             )
                             process.exit(1)
                         }
-                        spinner.succeed()
-                        const meta = {
+                        const packageJson = {
                             name,
                             description: answers.description,
                             author: answers.author,
                         }
-                        const fileName = `${name}/package.json`
-                        const content = fs.readFileSync(fileName).toString()
-                        const result = handlebars.compile(content)(meta)
-                        fs.writeFileSync(fileName, result)
+                        const packageFile = `${name}/package.json`
+                        const packageContent = fs.readFileSync(packageFile).toString()
+                        const packageResult = handlebars.compile(packageContent)(packageJson)
+                        fs.writeFileSync(packageFile, packageResult)
+                        const projectJson = {
+                            projectname: name,
+                            description: answers.description,
+                            appid: answers.appid,
+                        }
+                        const projectFile = `${name}/src/project.config.json`
+                        const projectContent = fs.readFileSync(projectFile).toString()
+                        const projectResult = handlebars.compile(projectContent)(projectJson)
+                        fs.writeFileSync(projectFile, projectResult)
+                        spinner.succeed()
                         console.log(
                             symbols.success,
                             chalk.green('Success!')
