@@ -4,6 +4,8 @@
 
 ```bash
 npm i create-wxcool-cli -g
+
+create-wxcool -v
 ```
 
 ## Create And Run Project
