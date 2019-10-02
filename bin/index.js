@@ -25,10 +25,10 @@ program
                     name: 'author',
                     message: 'please enter author:',
                 },
-                // {
-                //     name: 'appid',
-                //     message: 'please enter program appid:'
-                // }
+                {
+                    name: 'appid',
+                    message: 'please enter program appid:'
+                }
             ]).then((answers) => {
                 console.log(answers)
                 const spinner = ora('Create Program...')
@@ -56,15 +56,15 @@ program
                         const packageContent = fs.readFileSync(packageFile).toString()
                         const packageResult = handlebars.compile(packageContent)(packageJson)
                         fs.writeFileSync(packageFile, packageResult)
-                        // const projectJson = {
-                        //     projectname: name,
-                        //     description: answers.description,
-                        //     appid: answers.appid,
-                        // }
-                        // const projectFile = `${name}/src/project.config.json`
-                        // const projectContent = fs.readFileSync(projectFile).toString()
-                        // const projectResult = handlebars.compile(projectContent)(projectJson)
-                        // fs.writeFileSync(projectFile, projectResult)
+                        const projectJson = {
+                            projectname: name,
+                            description: answers.description,
+                            appid: answers.appid,
+                        }
+                        const projectFile = `${name}/src/project.config.json`
+                        const projectContent = fs.readFileSync(projectFile).toString()
+                        const projectResult = handlebars.compile(projectContent)(projectJson)
+                        fs.writeFileSync(projectFile, projectResult)
                         spinner.succeed()
                         console.log(
                             symbols.success,
