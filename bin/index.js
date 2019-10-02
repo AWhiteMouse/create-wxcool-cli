@@ -70,6 +70,15 @@ program
                             symbols.success,
                             chalk.green('Success!')
                         )
+                        console.log()
+                        console.log('========================')
+                        console.log()
+                        console.log(`      $ cd ${name}      `)
+                        console.log('      $ npm install     ')
+                        console.log('      $ npm run dev     ')
+                        console.log()
+                        console.log('========================')
+                        console.log()
                     })
             })
         } else {
