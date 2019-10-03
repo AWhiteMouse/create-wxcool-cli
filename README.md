@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-npm i create-wxcool-cli -g
+npm i create-wxcool-cli gulp-cli -g
 
 create-wxcool -v
 ```
