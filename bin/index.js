@@ -19,11 +19,11 @@ program
             inquirer.prompt([
                 {
                     name: 'description',
-                    message: 'please enter description:',
+                    message: 'please enter program description:',
                 },
                 {
                     name: 'author',
-                    message: 'please enter author:',
+                    message: 'please enter program author:',
                 },
                 {
                     name: 'appid',
@@ -81,7 +81,7 @@ program
                         console.log('========================')
                         console.log()
                         console.log(`      $ cd ${name}      `)
-                        console.log('      $ npm install     ')
+                        console.log('      $ npm i           ')
                         console.log('      $ npm run dev     ')
                         console.log()
                         console.log('========================')
