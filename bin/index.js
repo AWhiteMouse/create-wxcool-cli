@@ -65,6 +65,13 @@ program
                         const projectContent = fs.readFileSync(projectFile).toString()
                         const projectResult = handlebars.compile(projectContent)(projectJson)
                         fs.writeFileSync(projectFile, projectResult)
+                        const appJson = {
+                            "window.navigationBarTitleText": name,
+                        }
+                        const appFile = `${name}/src/app.json`
+                        const appContent = fs.readFileSync(appFile).toString()
+                        const appResult = handlebars.compile(appContent)(appJson)
+                        fs.writeFileSync(appFile, appResult)
                         spinner.succeed()
                         console.log(
                             symbols.success,
