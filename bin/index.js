@@ -95,8 +95,8 @@ program
     }).on('--help', () => {
         console.log()
         console.log('Examples:')
-        console.log('  $ create-wxcool init <app-name>')
-        console.log('  $ create-wxcool i <app-name>')
+        console.log('  $ wxcool init <app-name>')
+        console.log('  $ wxcool i <app-name>')
         console.log()
     })
 

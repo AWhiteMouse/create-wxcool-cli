@@ -4,7 +4,7 @@
   "description": "create a wxcool program",
   "main": "bin/index.js",
   "bin": {
-    "create-wxcool": "bin/index.js"
+    "wxcool": "bin/index.js"
   },
   "repository": {
     "type": "git",

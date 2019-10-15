@@ -1,17 +1,17 @@
-# Create-wxcool-cli
+# wxcool-cli
 
 ## Install
 
 ```bash
-npm i create-wxcool-cli gulp-cli -g
+npm i wxcool-cli gulp-cli -g
 
-create-wxcool -v
+wxcool -v
 ```
 
 ## Create And Run Project
 
 ```bash
-create-wxcool i <app-name>
+wxcool i <app-name>
 
 cd <app-name>
 
